@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-reactive-form',
@@ -16,6 +16,13 @@ export class ReactiveFormComponent {
   adress : new FormControl('',Validators.required),
  })
 
+ formBuilder:any;
+ constructor(private  fb: FormBuilder) {
+  this.formBuilder = fb.group({
+    login: ['', [Validators.required, Validators.minLength(3)]],
+    password: ['', Validators.required],
+  });
+ }
  showLogin(){
   console.log(this.login);
  }

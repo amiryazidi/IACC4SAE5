@@ -12,6 +12,10 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { DetailProductComponent } from './detail-product/detail-product.component';
 import { ApartmentComponent } from './apartment/apartment.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { MobileComponent } from './mobile/mobile.component';
+import { TvComponent } from './tv/tv.component';
+import { ShowOneProductComponent } from './show-one-product/show-one-product.component';
+import { AddProductComponent } from './add-product/add-product.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,11 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
     NotFoundComponent,
     DetailProductComponent,
     ApartmentComponent,
-    ReactiveFormComponent
+    ReactiveFormComponent,
+    MobileComponent,
+    TvComponent,
+    ShowOneProductComponent,
+    AddProductComponent
   ],
   imports: [
     BrowserModule,

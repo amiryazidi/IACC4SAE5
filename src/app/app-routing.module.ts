@@ -7,12 +7,17 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { DetailProductComponent } from './detail-product/detail-product.component';
 import { ApartmentComponent } from './apartment/apartment.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { MobileComponent } from './mobile/mobile.component';
+import { TvComponent } from './tv/tv.component';
+import { AddProductComponent } from './add-product/add-product.component';
 
 const routes: Routes = [
   {path:'home', component:TestComponent},
   {path:'', redirectTo:'/home', pathMatch:'full'},
   {path:'product', component:HomeComponent},
-  {path:'forms', component:ReactiveFormComponent},
+  {path:'forms', component:AddProductComponent},
+  {path:'phone', component:MobileComponent},
+  {path:'tv', component:TvComponent},
   {path:'product/:id', component:DetailProductComponent},
   {path:'residence', component:ResidencesComponent},
   {path:'showApparts/:id', component:ApartmentComponent},
