@@ -16,7 +16,7 @@ import { MobileComponent } from './mobile/mobile.component';
 import { TvComponent } from './tv/tv.component';
 import { ShowOneProductComponent } from './show-one-product/show-one-product.component';
 import { AddProductComponent } from './add-product/add-product.component';
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +37,8 @@ import { AddProductComponent } from './add-product/add-product.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
